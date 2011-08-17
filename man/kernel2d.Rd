@@ -68,11 +68,7 @@ k100 <- spkernel2d(bodmin.xy, bodmin$poly, h0=1, grd1)
 k150 <- spkernel2d(bodmin.xy, bodmin$poly, h0=1.5, grd1)
 k200 <- spkernel2d(bodmin.xy, bodmin$poly, h0=2, grd1)
 k250 <- spkernel2d(bodmin.xy, bodmin$poly, h0=2.5, grd1)
-if (.sp_lt_0.9()) {
-  df <- AttributeList(list(k100=k100, k150=k150, k200=k200, k250=k250))
-} else {
-  df <- data.frame(k100=k100, k150=k150, k200=k200, k250=k250)
-}
+df <- data.frame(k100=k100, k150=k150, k200=k200, k250=k250)
 kernels <- SpatialGridDataFrame(grd1, data=df)
 spplot(kernels, checkEmptyRC=FALSE, col.regions=terrain.colors(16), cuts=15)
 }

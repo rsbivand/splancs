@@ -1,5 +1,5 @@
 spkernel2d <- function(pts, poly, h0, grd, kernel = "quartic") {
-    require(sp, quietly=TRUE)
+#    require(sp, quietly=TRUE)
     pts <- coordinates(pts)
     storage.mode(pts) <- "double"
     storage.mode(poly) <- "double"
@@ -36,8 +36,4 @@ spkernel2d <- function(pts, poly, h0, grd, kernel = "quartic") {
     res
 }
 
-.sp_lt_0.9 <- function() {
-    sI <- sessionInfo(package="sp")
-    spver <- sI$otherPkgs$sp$Version
-    as.numeric(substring(spver, 1, 3)) < 0.9
-}
+
