@@ -4,5 +4,8 @@
 
 inpip <- function (pts, poly, bound=NULL, quiet=TRUE)
 {
+# coercion to points 110819
+        if (!is.points(pts)) pts <- as.points(pts)
+        if (!is.points(poly)) poly <- as.points(poly)
 	seq(1:npts(pts))[inout(pts, poly, bound, quiet)]
 }

@@ -30,8 +30,11 @@ as.points <- function(...)
 					else{
 						pts <- cbind(arx,ary)
 					}
-				}
-				else{
+				} else if (ncol(fargs) == 2) {
+# 110819
+                                        pts <- as.matrix(fargs)
+                                        warning("Incorrectly structured list coerces to points")
+				} else {
 					stop("Cannot make points from list without x and y components.")
 				}
 			}

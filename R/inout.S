@@ -4,6 +4,9 @@
 
 inout <- function (pts, poly, bound = NULL, quiet=TRUE) 
 {
+# coercion to points 110819
+    if (!is.points(pts)) pts <- as.points(pts)
+    if (!is.points(poly)) poly <- as.points(poly)
     storage.mode(poly) <- "double"
     storage.mode(pts) <- "double"
     xp <- c(poly[, 1], poly[1, 1])
