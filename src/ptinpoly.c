@@ -86,7 +86,7 @@ dscale_pip(double xo, double yo, double *xs, double *ys)
 void ptinpoly (int *presult, double xpt, double ypt, double *xbuf,
 	double *ybuf, int numpts)
 {
-    int   i;
+/*    int   i;*/
     int   numcrosses;
     int   ptr;
     double ratio;
