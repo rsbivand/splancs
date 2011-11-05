@@ -19,6 +19,9 @@ as.points <- function(...)
 	}
 	else{
 		if(nv==1){
+# 111105
+                        if (is.data.frame(fargs[[1]]))
+                            fargs[[1]] <- as.list(fargs[[1]])
 			if(is.list(fargs[[1]])){
 				fargs <- fargs[[1]]
 				if(any(names(fargs)=="x") & any(names(fargs)=="y")){
@@ -30,10 +33,10 @@ as.points <- function(...)
 					else{
 						pts <- cbind(arx,ary)
 					}
-				} else if (ncol(fargs) == 2) {
+				} else if (length(fargs) == 2) {
 # 110819
-                                        pts <- as.matrix(fargs)
-                                        warning("Incorrectly structured list coerces to points")
+                                        pts <- do.call("cbind", fargs)
+                                        warning("List/data.frame components should be named x and y")
 				} else {
 					stop("Cannot make points from list without x and y components.")
 				}
