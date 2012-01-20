@@ -1,3 +1,11 @@
+2012-01-20 10:30  rsbivand
+
+	* DESCRIPTION, R/kernel2d.S, man/kernel2d.Rd: add quiet to kernel2d
+
+2011-11-05 13:24  rsbivand
+
+	* ChangeLog, inst/ChangeLog: harden as.points
+
 2011-11-05 13:23  rsbivand
 
 	* ChangeLog, DESCRIPTION, R/as.points.S: harden as.points
