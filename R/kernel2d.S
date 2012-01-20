@@ -2,7 +2,7 @@
 # Peter Diggle (c) 1991-3; http://www.maths.lancs.ac.uk/~rowlings/Splancs/
 # R port: copyright 1998-2000 by Roger S. Bivand
 
-kernel2d <- function(pts,poly,h0,nx=20,ny=20,kernel='quartic')
+kernel2d <- function(pts,poly,h0,nx=20,ny=20,kernel='quartic',quiet=FALSE)
 {
 	if(!is.points(pts))stop('Invalid points argument')
 	
@@ -23,8 +23,11 @@ kernel2d <- function(pts,poly,h0,nx=20,ny=20,kernel='quartic')
 	a2 <- xrang[2]
 	b1 <- yrang[1]
 	b2 <- yrang[2]
-	cat("Xrange is ",a1,a2,"\n")
-	cat("Yrange is ",b1,b2,"\n")
+# 120118 Stephen Eglen
+	if (!quiet) {
+            cat("Xrange is ",a1,a2,"\n")
+	    cat("Yrange is ",b1,b2,"\n")
+        }
 	xgrid <- rep(0,nx)
 	ygrid <- rep(0,ny)
 	zgrid <- matrix(0,nx,ny)
@@ -33,7 +36,8 @@ kernel2d <- function(pts,poly,h0,nx=20,ny=20,kernel='quartic')
         storage.mode(zgrid) <- "double"
 	if(kernel=='quartic')
 	{
-		cat('Doing quartic kernel\n')
+# 120118 Stephen Eglen
+		if (!quiet) cat('Doing quartic kernel\n')
 #		library.dynam('splancs','krnqrt.o')
 		storage.mode(zgrid) <- "double"
 		klist <- .Fortran("krnqrt",

@@ -12,7 +12,7 @@ Kernel smoothing of a point pattern
 Perform kernel smoothing of a point pattern
 }
 \usage{
-kernel2d(pts,poly,h0,nx=20,ny=20,kernel='quartic')
+kernel2d(pts,poly,h0,nx=20,ny=20,kernel='quartic',quiet=FALSE)
 spkernel2d(pts, poly, h0, grd, kernel = "quartic")
 }
 \arguments{
@@ -33,6 +33,9 @@ Number of points along the y-axis of the returned grid.
 }
 \item{kernel}{
 Type of kernel function to use. Currently only the quartic kernel is implemented.
+}
+\item{quiet}{
+If TRUE, no debugging output is printed.
 }
 \item{grd}{a GridTopology object from the sp package}
 }
