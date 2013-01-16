@@ -1,3 +1,16 @@
+2013-01-16 08:34  rsbivand
+
+	* DESCRIPTION, R/First.lib.S: change to .onAttach for startup
+	  message
+
+2012-01-20 10:31  rsbivand
+
+	* inst/ChangeLog: tidy
+
+2012-01-20 10:31  rsbivand
+
+	* ChangeLog: tidy
+
 2012-01-20 10:30  rsbivand
 
 	* DESCRIPTION, R/kernel2d.S, man/kernel2d.Rd: add quiet to kernel2d
