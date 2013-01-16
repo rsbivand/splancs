@@ -3,7 +3,8 @@
 # R port: copyright 1998-2000 by Roger S. Bivand
 
 #.First.lib <- function(lib,pkg)
-.onLoad <- function(lib,pkg){
+#.onLoad <- function(lib,pkg){
+.onAttach <- function(lib,pkg){
 #	cat("\nSpatial Point Pattern Analysis Code in S-Plus\n")
 #	cat("\n Version 2 - Spatial and Space-Time analysis\n")
         Smess <- "\nSpatial Point Pattern Analysis Code in S-Plus\n"
