@@ -33,8 +33,8 @@ void ptinpoly1 (int *presult, double *xpt, double *ypt, double *xbuf,
 	int i;
 	double *xs, *ys;
 	double xpts, ypts;
-	xs = (double *) R_alloc(numpts[0], sizeof(double));
-	ys = (double *) R_alloc(numpts[0], sizeof(double));
+	xs = (double *) R_alloc((size_t) numpts[0], sizeof(double));
+	ys = (double *) R_alloc((size_t) numpts[0], sizeof(double));
 
 	frset_pip(bb[0], bb[1], bb[2], bb[3]);
 	    
