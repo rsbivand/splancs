@@ -1,3 +1,20 @@
+2013-06-22 17:09  rsbivand
+
+	* DESCRIPTION, inst/LICENCE, inst/README, man/burkitt.Rd: help line
+	  lengths
+
+2013-03-30 13:30  rsbivand
+
+	* LICENCE: remove clang warning
+
+2013-03-30 13:29  rsbivand
+
+	* src/ptinpoly.c: remove clang warning
+
+2013-01-16 08:35  rsbivand
+
+	* ChangeLog, inst/ChangeLog: tidy
+
 2013-01-16 08:34  rsbivand
 
 	* DESCRIPTION, R/First.lib.S: change to .onAttach for startup
