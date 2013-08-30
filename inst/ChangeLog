@@ -1,3 +1,15 @@
+2013-08-30 14:44  rsbivand
+
+	* DESCRIPTION: tidy
+
+2013-08-29 14:26  rsbivand
+
+	* .Rbuildignore: tidy
+
+2013-06-22 17:10  rsbivand
+
+	* ChangeLog, inst/ChangeLog: tidy
+
 2013-06-22 17:09  rsbivand
 
 	* DESCRIPTION, inst/LICENCE, inst/README, man/burkitt.Rd: help line
