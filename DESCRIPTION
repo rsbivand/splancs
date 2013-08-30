@@ -1,6 +1,6 @@
 Package: splancs
-Version: 2.01-33
-Date: 2013-06-22
+Version: 2.01-34
+Date: 2013-08-30
 Title: Spatial and Space-Time Point Pattern Analysis
 Authors@R: c(
 	person("Roger", "Bivand", role = c("cre"), email = "Roger.Bivand@nhh.no"),
@@ -8,6 +8,8 @@ Authors@R: c(
 	person("Peter", "Diggle", role = "aut"),
 	person("Giovanni", "Petris", role = "ctb"),
 	person("Stephen", "Eglen", role = "ctb"))
+Author: Barry Rowlingson and Peter Diggle
+Maintainer: Roger Bivand <Roger.Bivand@nhh.no>
 Depends: R (>= 2.10.0), sp (>= 0.9)
 Description: Spatial and Space-Time Point Pattern Analysis Functions
 License: GPL (>= 2)
