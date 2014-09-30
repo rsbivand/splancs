@@ -13,7 +13,7 @@ inout <- function (pts, poly, bound = NULL, quiet=TRUE)
     yp <- c(poly[, 2], poly[1, 2])
     np <- length(xp)
     nptsi <- npts(pts)
-    ind <- logical(length = nptsi)
+    ind <- integer(length = nptsi)
     if (!is.null(bound)) {
 #
 # sets in-polygon criterion for points equal to polygon
@@ -40,11 +40,12 @@ inout <- function (pts, poly, bound = NULL, quiet=TRUE)
 	   if(bound) z[which(za[[1]] <= 0)] <- TRUE
 	   else z[which(za[[1]] < 0)] <- TRUE
     } else {
+# ind converted to integer RSB 140930
         piplist <- .Fortran("inpip", pts[, 1], pts[,2], 
             as.integer(nptsi), xp, yp, 
-            as.integer(np), as.logical(ind),
+            as.integer(np), as.integer(ind),
 		PACKAGE="splancs")
-        z <- piplist[[7]]
+        z <- ifelse(piplist[[7]] == 0, FALSE, TRUE)
     }
     z
 }

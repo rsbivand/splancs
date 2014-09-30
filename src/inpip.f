@@ -7,14 +7,14 @@ C R port: copyright 1998-2000 by Roger S. Bivand
 
       real*8 xpts(npts),ypts(npts)
       real*8 xpoly(npoly+1),ypoly(npoly+1)
-
-      logical lind(npts)
+C lind converted to integer RSB 140930
+      integer lind(npts)
 
       do i=1,npts
         if(ipippa(xpts(i),ypts(i),xpoly,ypoly,npoly).eq.0) then
-          lind(i)=.FALSE.
+          lind(i)=0
         else
-          lind(i)=.TRUE.
+          lind(i)=1
         end if
       end do
 
