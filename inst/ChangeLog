@@ -1,113 +1,146 @@
+2014-09-30 15:51  rsbivand
+
+	* DESCRIPTION,
+	  R/inout.S, src/inpip.f: logical to integer inpip.f
+
+2013-08-30 14:45  rsbivand
+
+	* ChangeLog,
+	  inst/ChangeLog: tidy
+
 2013-08-30 14:44  rsbivand
 
-	* DESCRIPTION: tidy
+	* DESCRIPTION:
+	  tidy
 
 2013-08-29 14:26  rsbivand
 
-	* .Rbuildignore: tidy
+	* .Rbuildignore:
+	  tidy
 
 2013-06-22 17:10  rsbivand
 
-	* ChangeLog, inst/ChangeLog: tidy
+	* ChangeLog,
+	  inst/ChangeLog: tidy
 
 2013-06-22 17:09  rsbivand
 
-	* DESCRIPTION, inst/LICENCE, inst/README, man/burkitt.Rd: help line
-	  lengths
+	* DESCRIPTION,
+	  inst/LICENCE, inst/README, man/burkitt.Rd: help line lengths
 
 2013-03-30 13:30  rsbivand
 
-	* LICENCE: remove clang warning
+	* LICENCE:
+	  remove clang warning
 
 2013-03-30 13:29  rsbivand
 
-	* src/ptinpoly.c: remove clang warning
+	* src/ptinpoly.c:
+	  remove clang warning
 
 2013-01-16 08:35  rsbivand
 
-	* ChangeLog, inst/ChangeLog: tidy
+	* ChangeLog,
+	  inst/ChangeLog: tidy
 
 2013-01-16 08:34  rsbivand
 
-	* DESCRIPTION, R/First.lib.S: change to .onAttach for startup
-	  message
+	* DESCRIPTION,
+	  R/First.lib.S: change to .onAttach for startup message
 
 2012-01-20 10:31  rsbivand
 
-	* inst/ChangeLog: tidy
+	* inst/ChangeLog:
+	  tidy
 
 2012-01-20 10:31  rsbivand
 
-	* ChangeLog: tidy
+	* ChangeLog:
+	  tidy
 
 2012-01-20 10:30  rsbivand
 
-	* DESCRIPTION, R/kernel2d.S, man/kernel2d.Rd: add quiet to kernel2d
+	* DESCRIPTION,
+	  R/kernel2d.S, man/kernel2d.Rd: add quiet to kernel2d
 
 2011-11-05 13:24  rsbivand
 
-	* ChangeLog, inst/ChangeLog: harden as.points
+	* ChangeLog,
+	  inst/ChangeLog: harden as.points
 
 2011-11-05 13:23  rsbivand
 
-	* ChangeLog, DESCRIPTION, R/as.points.S: harden as.points
+	* ChangeLog,
+	  DESCRIPTION, R/as.points.S: harden as.points
 
 2011-08-20 17:32  rsbivand
 
-	* src/ptinpoly.c: fix unused i in ptinpoly.c
+	* src/ptinpoly.c:
+	  fix unused i in ptinpoly.c
 
 2011-08-19 17:42  rsbivand
 
-	* ChangeLog, inst/ChangeLog: coercion to two-column matrix points
-	  in inout()
+	* ChangeLog,
+	  inst/ChangeLog: coercion to two-column matrix points in inout()
 
 2011-08-19 17:41  rsbivand
 
-	* DESCRIPTION, R/as.points.S, R/inout.S, R/inpip.S: coercion to
-	  two-column matrix points in inout()
+	* DESCRIPTION,
+	  R/as.points.S, R/inout.S, R/inpip.S: coercion to two-column
+	  matrix points in inout()
 
 2011-08-17 10:45  rsbivand
 
-	* ChangeLog, inst/ChangeLog: adding NAMESPACE, .onLoad()
+	* ChangeLog,
+	  inst/ChangeLog: adding NAMESPACE, .onLoad()
 
 2011-08-17 10:41  rsbivand
 
-	* DESCRIPTION, INDEX, NAMESPACE, R/First.lib.S, R/spkernel2d.R,
-	  data/00Index, data/bodmin.rda, data/cardiff.rda,
-	  data/okblack.rda, data/okwhite.rda, data/southlancs.rda,
-	  data/uganda.rda, man/kernel2d.Rd: adding NAMESPACE, .onLoad()
+	* DESCRIPTION,
+	  INDEX, NAMESPACE, R/First.lib.S, R/spkernel2d.R, data/00Index,
+	  data/bodmin.rda, data/cardiff.rda, data/okblack.rda,
+	  data/okwhite.rda, data/southlancs.rda, data/uganda.rda,
+	  man/kernel2d.Rd: adding NAMESPACE, .onLoad()
 
 2011-02-22 16:24  rsbivand
 
-	* oChangeLog, svn2cl.xsl: tidy
+	* oChangeLog,
+	  svn2cl.xsl: tidy
 
 2011-02-22 16:18  rsbivand
 
-	* .: tidy
+	* .:
+	  tidy
 
 2011-02-12 11:33  rsbivand
 
-	* clearup after sourceforge outage
+	* clearup
+	  after sourceforge outage
 
 2010-08-28 15:33  rsbivand
 
-	* as.double to storage.mode
+	* as.double
+	  to storage.mode
 
 2010-06-17 14:40  rsbivand
 
-	* bboxx docs
+	* bboxx
+	  docs
 
 2009-10-09 19:06  rsbivand
 
-	* stmctest modifications
+	* stmctest
+	  modifications
 
 2009-09-17 07:36  rsbivand
 
-	* fix licence
+	* fix
+	  licence
 
 2008-01-30 16:30  rsbivand
 
-	* grd in spkernel2d
+	* grd
+	  in spkernel2d
 
 2007-09-04 12:55  rsbivand
 
@@ -115,11 +148,13 @@
 
 2007-08-23 07:37  rsbivand
 
-	* n2dist docs
+	* n2dist
+	  docs
 
 2007-04-23 04:48  rsbivand
 
-	* wrong polygon on khat
+	* wrong
+	  polygon on khat
 
 2007-03-30 05:05  rsbivand
 
@@ -127,7 +162,8 @@
 
 2007-03-29 14:34  rsbivand
 
-	* disambiguate rlabel and shift
+	* disambiguate
+	  rlabel and shift
 
 2006-09-22 14:14  rsbivand
 
@@ -135,27 +171,33 @@
 
 2006-09-21 19:46  rsbivand
 
-	* R 2.4.0
+	* R
+	  2.4.0
 
 2006-04-11 18:27  rsbivand
 
-	* spkernel2d and bboxx
+	* spkernel2d
+	  and bboxx
 
 2006-04-10 19:16  rsbivand
 
-	* spkernel2d and bboxx
+	* spkernel2d
+	  and bboxx
 
 2005-04-11 18:14  rsbivand
 
-	* e40 to d40
+	* e40
+	  to d40
 
 2004-11-01 17:54  rsb
 
-	* pre lancs
+	* pre
+	  lancs
 
 2003-10-28 18:26  rsb
 
-	* over 10
+	* over
+	  10
 
 2002-07-30 16:28  rsb
 
@@ -167,7 +209,8 @@
 
 2002-07-29 18:09  rsb
 
-	* to rda
+	* to
+	  rda
 
 2002-07-29 17:48  rsb
 
@@ -175,39 +218,48 @@
 
 2002-07-29 13:08  rsb
 
-	* Licence and T/F
+	* Licence
+	  and T/F
 
 2002-07-29 11:37  rsb
 
-	* added inst
+	* added
+	  inst
 
 2002-02-13 14:52  rsb
 
-	* tribble bug
+	* tribble
+	  bug
 
 2002-01-24 13:44  rsb
 
-	* data to rda
+	* data
+	  to rda
 
 2002-01-16 17:49  rsb
 
-	* count as integer
+	* count
+	  as integer
 
 2001-12-11 13:02  rsb
 
-	* 1.4.0 fixes
+	* 1.4.0
+	  fixes
 
 2001-06-18 09:48  rsb
 
-	* raised inc
+	* raised
+	  inc
 
 2001-06-18 09:36  rsb
 
-	* raised inc
+	* raised
+	  inc
 
 2001-06-18 08:49  rsb
 
-	* raised inc
+	* raised
+	  inc
 
 2001-06-17 13:13  rsb
 
@@ -219,19 +271,23 @@
 
 2001-06-15 17:57  rsb
 
-	* documenting stk
+	* documenting
+	  stk
 
 2001-06-14 15:30  rsb
 
-	* added ptinpoly etc.
+	* added
+	  ptinpoly etc.
 
 2001-06-13 16:38  rsb
 
-	* args matching
+	* args
+	  matching
 
 2001-06-13 06:54  rsb
 
-	* rel 3 final
+	* rel
+	  3 final
 
 2001-06-12 21:50  rsb
 
@@ -239,23 +295,28 @@
 
 2001-06-12 21:45  rsb
 
-	* pcp and pip
+	* pcp
+	  and pip
 
 2001-06-12 09:03  rsb
 
-	* small things
+	* small
+	  things
 
 2001-06-12 08:53  rsb
 
-	* small things
+	* small
+	  things
 
 2000-11-03 20:08  rsb
 
-	* tidy 3
+	* tidy
+	  3
 
 2000-11-03 19:20  rsb
 
-	* tidy again
+	* tidy
+	  again
 
 2000-11-03 11:19  rsb
 
@@ -267,7 +328,8 @@
 
 2000-11-03 10:09  rsb
 
-	* missing doc
+	* missing
+	  doc
 
 2000-11-03 09:37  rsb
 
@@ -279,15 +341,18 @@
 
 2000-11-03 09:03  rsb
 
-	* refs and rusk in man
+	* refs
+	  and rusk in man
 
 2000-11-03 08:32  rsb
 
-	* Recreating README
+	* Recreating
+	  README
 
 2000-11-01 21:26  rsb
 
-	* changed licence
+	* changed
+	  licence
 
 1999-12-22 10:00  rsb
 
@@ -299,43 +364,53 @@
 
 1999-12-22 09:36  rsb
 
-	* updated INDEX
+	* updated
+	  INDEX
 
 1999-12-22 09:32  rsb
 
-	* edited man files and removed unused data files
+	* edited
+	  man files and removed unused data files
 
 1999-12-21 20:44  rsb
 
-	* more examples
+	* more
+	  examples
 
 1999-12-21 15:41  rsb
 
-	* adding examples
+	* adding
+	  examples
 
 1999-12-21 09:59  rsb
 
-	* added MASS, spatial dependencies
+	* added
+	  MASS, spatial dependencies
 
 1999-12-21 09:58  rsb
 
-	* added polygon
+	* added
+	  polygon
 
 1999-12-21 09:50  rsb
 
-	* added polygon
+	* added
+	  polygon
 
 1999-12-21 09:42  rsb
 
-	* changed \fC to \code{
+	* changed
+	  \fC to \code{
 
 1999-12-21 09:37  rsb
 
-	* corrected alias
+	* corrected
+	  alias
 
 1999-12-21 09:16  rsb
 
-	* added polygon details
+	* added
+	  polygon details
 
 1999-12-21 09:07  rsb
 
@@ -343,7 +418,8 @@
 
 1999-12-21 08:39  rsb
 
-	* examples 1
+	* examples
+	  1
 
 1999-12-21 08:39  rsb
 
@@ -351,65 +427,81 @@
 
 1999-12-21 08:34  rsb
 
-	* remove pty=s checks
+	* remove
+	  pty=s checks
 
 1999-12-21 08:22  rsb
 
-	* reversed y data
+	* reversed
+	  y data
 
 1999-12-21 08:13  rsb
 
-	* removed density from polygon()
+	* removed
+	  density from polygon()
 
 1999-12-20 14:53  rsb
 
-	* revised data
+	* revised
+	  data
 
 1999-12-20 09:12  rsb
 
-	* renamed area to areapl
+	* renamed
+	  area to areapl
 
 1999-12-20 09:07  rsb
 
-	* area to areapl functions
+	* area
+	  to areapl functions
 
 1999-12-19 22:14  rsb
 
-	* help for data files
+	* help
+	  for data files
 
 1999-12-19 22:13  rsb
 
-	* data files
+	* data
+	  files
 
 1999-12-19 21:48  rsb
 
-	* creating file
+	* creating
+	  file
 
 1999-12-19 21:10  rsb
 
-	* reversed pkg<->lib
+	* reversed
+	  pkg<->lib
 
 1999-12-18 20:53  rsb
 
-	* Removed comment on dynam()
+	* Removed
+	  comment on dynam()
 
 1999-12-18 20:52  rsb
 
-	* Changed _ to <- and commented out *.dynam()
+	* Changed
+	  _ to <- and commented out *.dynam()
 
 1999-12-18 20:40  rsb
 
-	* Added library.dynam("splancs", ...)
+	* Added
+	  library.dynam("splancs", ...)
 
 1999-12-18 20:23  rsb
 
-	* changed order of implicit and common block
+	* changed
+	  order of implicit and common block
 
 1999-12-15 10:41  rsb
 
-	* Initial revision
+	* Initial
+	  revision
 
-1999-12-15 10:41  
+1999-12-15 10:41
 
-	* New repository initialized by cvs2svn.
+	* New
+	  repository initialized by cvs2svn.
 
