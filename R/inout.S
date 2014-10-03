@@ -13,7 +13,7 @@ inout <- function (pts, poly, bound = NULL, quiet=TRUE)
     yp <- c(poly[, 2], poly[1, 2])
     np <- length(xp)
     nptsi <- npts(pts)
-    ind <- integer(length = nptsi)
+    ind <- logical(length = nptsi)
     if (!is.null(bound)) {
 #
 # sets in-polygon criterion for points equal to polygon
