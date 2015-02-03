@@ -10,3 +10,7 @@ exportPattern("^[^\\.]")
 import(
   sp
 )
+
+S3method(print, ribfit)
+S3method(print, khat)
+S3method(plot, khat)
