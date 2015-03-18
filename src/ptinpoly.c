@@ -92,7 +92,7 @@ void ptinpoly (int *presult, double xpt, double ypt, double *xbuf,
     double ratio;
     double xcross;
     double ydif;
-    int   thisyup,lastyup;
+    int   thisyup=FALSE,lastyup;
     double fmax2(double x, double y), fmin2(double x, double y);
         
     /* First decide on the direction of the segments leading from the
