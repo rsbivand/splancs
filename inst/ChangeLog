@@ -1,3 +1,23 @@
+2015-03-18 11:28  rsbivand
+
+	* DESCRIPTION,
+	  src/ptinpoly.c: tidy
+
+2015-02-03 19:28  rsbivand
+
+	* NAMESPACE:
+	  tidy
+
+2014-10-03 12:52  rsbivand
+
+	* DESCRIPTION,
+	  R/inout.S: inout
+
+2014-09-30 15:55  rsbivand
+
+	* ChangeLog,
+	  inst/ChangeLog: tidy
+
 2014-09-30 15:51  rsbivand
 
 	* DESCRIPTION,
