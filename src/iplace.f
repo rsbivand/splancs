@@ -8,7 +8,7 @@ C R port: copyright 1998-2000 by Roger S. Bivand
 c
 c which of the variable width bins s is t in?
 c
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
 
       dimension s(ns)
 

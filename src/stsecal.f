@@ -5,7 +5,7 @@ C R port: copyright 1998-2000 by Roger S. Bivand
       subroutine stsecal(x,y,n,xp,yp,np,s,ns,Smat,Svec,z,tlow,tupp
      &     ,t,nt,Tmat,Tvec,long,Covmat)
 
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
 
       include 'bounds.h'
 

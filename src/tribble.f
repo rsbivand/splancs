@@ -8,7 +8,7 @@ C R port: copyright 1998-2000 by Roger S. Bivand
      &                   steps,
      &     reqmin,icount,kcode,dlogl)
 
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
 
       dimension iflags(npts),iwhich(ndvars)
       dimension vars(npts,ndvars+ncovars)
@@ -43,7 +43,7 @@ c      call intpr('nallpars',-1,nallpars,1)
 
 	subroutine trblik(iflags,vars,npts,nallpars,ndvars,
      &      iwhich,ndpars,pars,dlogl)
-	implicit real*8 (a-h,o-z)
+	implicit double precision (a-h,o-z)
 	dimension iflags(npts),iwhich(ndvars)
         dimension vars(npts,nallpars-ndvars)
         dimension pars(nallpars)
@@ -99,7 +99,7 @@ c        call dblepr('LOGLIK',-1,result,1)
       subroutine nelmin(n,start,min,ynewlo,reqmin,step,konvge,icount,
      &              iflags,vars,npts,nallpars,ndvars,
      &              iwhich,ndpars)
-      implicit real*8(a-h,o-z)
+      implicit double precision(a-h,o-z)
       dimension iflags(npts),iwhich(ndvars)
       dimension vars(npts,nallpars-ndvars)
        
@@ -109,7 +109,7 @@ c     as implemented by O'Neill(1971,Appl.Statist. 20, 338-45), with
 c     subsequent comments by Chambers+Ertel(1974, 23, 250-1), Benyon(1976,
 c     25, 97) and Hill(1978, 27, 380-2)
 c
-      real*8 min, rcoeff, ecoeff, ccoeff
+      double precision min, rcoeff, ecoeff, ccoeff
       dimension p(20,21),pstar(20),p2star(20),pbar(20),y(20),        
      1   start(n),min(n),step(n)                               
 c                                                                           
@@ -326,7 +326,7 @@ c
        end                                                                  
 	subroutine funct(ndim,start,z,
      &              iflags,vars,npts,nallpars,ndvars,iwhich,ndpars)
-	implicit real*8 (a-h,o-z)
+	implicit double precision (a-h,o-z)
       dimension iflags(npts),iwhich(ndpars)
       dimension vars(npts,nallpars-ndvars)
 
@@ -355,7 +355,7 @@ c        call dblepr('logl = ',-1,dlogl,1)
 c
 c transform the alphas and betas, and the rho
 c
-        implicit real*8 (a-h,o-z)
+        implicit double precision (a-h,o-z)
         dimension pars(nallpars)
 
 
@@ -370,7 +370,7 @@ c
 
         subroutine unlog(pars,nallpars,ndvars,aplus,bplus)  
 c reverse transformation
-        implicit real*8 (a-h,o-z)                                               
+        implicit double precision (a-h,o-z)                                               
         dimension pars(nallpars)  
         do i =1,ndvars
           pars(i)=dexp(pars(i))-aplus
@@ -381,7 +381,7 @@ c reverse transformation
         end
 
         function disfn(d2,alpha,beta)
-        implicit real*8 (a-h,o-z)                                               
+        implicit double precision (a-h,o-z)                                               
 c                                                                               
 c       input                                                                   
 c

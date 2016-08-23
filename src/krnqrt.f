@@ -4,7 +4,7 @@ C R port: copyright 1998-2000 by Roger S. Bivand
 
       subroutine krnqrt(x,y,n,xp,yp,np,h0,a1,a2,b1,b2,nx,ny
      &                 ,xgrid,ygrid,zgrid)
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
       dimension x(n),y(n),xp(np+1),yp(np+1)
       dimension xgrid(nx),ygrid(ny),zgrid(nx,ny)
 c
@@ -71,7 +71,7 @@ c
 
       end
       function ssarea(d1t,d2t,h)
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
 c ouch. ssarea was modifying its args. bad news 
       d1=d1t
       d2=d2t
@@ -94,7 +94,7 @@ c ouch. ssarea was modifying its args. bad news
       return
       end
       function arzz(d,theta)
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
       t=dtan(theta)
       d2=d*d
       d4=d2*d2
@@ -118,7 +118,7 @@ c             real numbers
 c             on output first n elements of y are shuffled to
 c             correspond to sorting on x
 c                                                                           
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
       dimension x(n),y(n)                                                        
       i=1                                                                   
     1 i=i+1                                                                 

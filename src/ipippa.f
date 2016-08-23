@@ -12,7 +12,7 @@ c
 c fortran version of C routine by Ken McElvain
 c
 
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
       include 'bounds.h'
 
 
@@ -59,7 +59,7 @@ c
 c
 c determine which quadrant xp,yp is in relative to xo,yo as origin
 c
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
 
         if(xp.lt.xo)then
                 if(yp.lt.yo) then

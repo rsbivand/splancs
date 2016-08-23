@@ -5,7 +5,7 @@ C R port: copyright 1998-2000 by Roger S. Bivand
 
       subroutine kern3d(xpts,ypts,zpts,npts,xg,nx,yg
      &   ,ny,zg,nz,hxy,hz,rkarr)
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
       dimension xpts(npts),ypts(npts),zpts(npts)
       dimension xg(nx),yg(ny),zg(nz)
       dimension rkarr(nx,ny,nz)

@@ -6,7 +6,7 @@ C R port: copyright 1998-2000 by Roger S. Bivand
 c
 c find the weight for the point at x,y, radius r
 c
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
 
       include 'bounds.h'
 

@@ -4,7 +4,7 @@ C R port: copyright 1998-2000 by Roger S. Bivand
 
       subroutine mse2d(x,y,n,a1,a2,b1,b2,nsmse,hsmse,amse,t)
 
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
 
       dimension x(n),y(n),t(nsmse),g(1000),hd(1000),amse(nsmse)
       common /anu/ hcell,h(1000),aval(1000),ncell
@@ -41,7 +41,7 @@ C R port: copyright 1998-2000 by Roger S. Bivand
       end
 
       subroutine khat(n,a,b,x,y)
-      implicit real*8 (a-h,o-z)                              
+      implicit double precision (a-h,o-z)                              
       dimension x(n),y(n)                                          
       common /anu/ hcell,h(1000),aval(1000),ncell
 c                                                                           
@@ -76,7 +76,7 @@ c
       return                                                                
       end                                                                   
       function fn2(x,y,t,a,b)  
-      implicit real*8 (a-h,o-z)                                             
+      implicit double precision (a-h,o-z)                                             
 c                                                                           
 c     weight function for khat                                              
 c     result is reciprocal of proportion of circumference                   
@@ -104,7 +104,7 @@ c
       return                                                                
       end                                                                   
       function form(t,r)
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
       if (r.lt.(2.0*t)) goto 10
       form=0.0
       return

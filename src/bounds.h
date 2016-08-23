@@ -7,7 +7,7 @@ c
       common /bounds/area,iconvx
 
 c area of polygon
-      real*8 area
+      double precision area
 
 c if the polygon is convex, iconvx is set to 1, else its concave.
       integer iconvx

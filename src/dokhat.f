@@ -4,7 +4,7 @@ C R port: copyright 1998-2002 by Roger S. Bivand
 
       subroutine trykh(x,y,n,xp,yp,np,s,ns,hkhat,icounts,hkhats,nptns)
 
-      implicit real*8(a-h,o-z)
+      implicit double precision(a-h,o-z)
 
       include 'bounds.h'
 

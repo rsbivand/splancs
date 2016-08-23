@@ -1,6 +1,6 @@
 Package: splancs
-Version: 2.01-38
-Date: 2015-09-27
+Version: 2.01-39
+Date: 2016-08-22
 Title: Spatial and Space-Time Point Pattern Analysis
 Authors@R: c(
 	person("Roger", "Bivand", role = c("cre"), email = "Roger.Bivand@nhh.no"),

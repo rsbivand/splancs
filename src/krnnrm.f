@@ -4,7 +4,7 @@ C R port: copyright 1998-2000 by Roger S. Bivand
 
       subroutine krnnrm(x,y,n,xp,yp,np,h0,a1,a2,b1,b2,nx,ny
      &                 ,xgrid,ygrid,zgrid)
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
       dimension x(n),y(n),xp(np+1),yp(np+1)
       dimension xgrid(nx),ygrid(ny),zgrid(nx,ny)
 c

@@ -11,7 +11,7 @@ c             real numbers
 c             on output first n elements of x are sorted from smallest      
 c             to largest                                                    
 c                                                                           
-      implicit real*8 (a-h,o-z)                                             
+      implicit double precision (a-h,o-z)                                             
       dimension x(n)                                                        
       i=1                                                                   
     1 i=i+1                                                                 

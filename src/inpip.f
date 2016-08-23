@@ -5,8 +5,8 @@ C R port: copyright 1998-2000 by Roger S. Bivand
 
       subroutine inpip(xpts,ypts,npts,xpoly,ypoly,npoly,lind)
 
-      real*8 xpts(npts),ypts(npts)
-      real*8 xpoly(npoly+1),ypoly(npoly+1)
+      double precision xpts(npts),ypts(npts)
+      double precision xpoly(npoly+1),ypoly(npoly+1)
 C lind converted to integer RSB 140930
       integer lind(npts)
 

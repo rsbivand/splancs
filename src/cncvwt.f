@@ -9,7 +9,7 @@ c compute the weight given to a point at x,y according to how much
 c of a circle of radius r is inside the bounding polygon
 c 
 c
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
       include 'bounds.h'
       dimension xp(np+1),yp(np+1)
       parameter(pi=3.141592654d0)
@@ -169,7 +169,7 @@ c weight is proportion of total angle in the poly
 
       integer function isig8(value,tiny)
 c return the sign (+1,0,-1) of a value
-            real*8 tiny,value
+            double precision tiny,value
           if (value.gt.tiny) then
             isig8 = 1
           else if (value.lt.-tiny) then

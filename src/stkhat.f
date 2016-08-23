@@ -10,7 +10,7 @@ c     assuming data on an arbitrary polygon
 c  
 c     See Diggle(1983, chapters 4,5) for methodological details.
 c
-      implicit real*8(a-h,o-z)
+      implicit double precision(a-h,o-z)
       dimension x1(n1),y1(n1),t1(n1),hs(ns),ht(nt),hst(ns,nt),
      +          t(nt),s(ns),
      1          xc(nc+1),yc(nc+1)
@@ -37,7 +37,7 @@ c     returned as arrays hs,ht,hst, tabulation in
 c     nscell by ntcell cells of size hscell by htcell,starting from                          
 c     zero.                                                                 
 c                                                                           
-      implicit real*8 (a-h,o-z)                                             
+      implicit double precision (a-h,o-z)                                             
       dimension x1(n1),y1(n1),t1(n1),hs(ns),                      
      1          ht(nt),hst(ns,nt),t(nt),s(ns),
      2          xc(nc+1),yc(nc+1)

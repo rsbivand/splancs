@@ -8,7 +8,7 @@ c-------------------------------------------------------------------------
 c
 c find the area of the polygon defined by points in xp,yp
 c
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
 
       dimension xp(np+1),yp(np+1)
 

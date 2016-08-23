@@ -5,7 +5,7 @@ C R port: copyright 1998-2000 by Roger S. Bivand
       subroutine khvc(x,y,n,n1,n2,xp,yp,np,s,ns,Amat,Bvec,vark1,
      &      vark12,vark2,Covmat)
 
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
       integer count
 
       include 'bounds.h'

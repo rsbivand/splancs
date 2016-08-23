@@ -6,10 +6,10 @@ C R port: copyright 1998-2000 by Roger S. Bivand
 c
 c return nearest neighbour distances and the indices of the neighbours
 c
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
 
-      real*8 pts(2,npts)
-      real*8 dists(npts)
+      double precision pts(2,npts)
+      double precision dists(npts)
       integer neighs(npts)
 
       do i=1,npts
@@ -30,7 +30,7 @@ c
       end
 
       subroutine n2dist(x1,y1,n1pts,x2,y2,n2pts,dists,neighs)
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
 
       dimension x1(n1pts),y1(n1pts),x2(n2pts),y2(n2pts)
       dimension dists(n2pts),neighs(n2pts)
@@ -63,7 +63,7 @@ c
       subroutine nndisf(x1,y1,n1pts,x2,y2,n2pts,
      &                   dists)
 
-      implicit real*8 (a-h,o-z)
+      implicit double precision (a-h,o-z)
 
       dimension x1(n1pts),y1(n1pts),x2(n2pts),y2(n2pts)
       dimension dists(n2pts)
