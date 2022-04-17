@@ -1,5 +1,5 @@
 % Based on Kenv.tor.Rd, Copyright Barry Rowlingson  and 
-% Peter Diggle (c) 1991-3; http://www.maths.lancs.ac.uk/~rowlings/Splancs/
+% Peter Diggle (c) 1991-3; https://www.maths.lancs.ac.uk/~rowlings/Splancs/
 % R port: copyright 2003 by Roger S. Bivand, 
 % examples copyright 2003 Stephen Eglen <stephen@inf.ed.ac.uk>
 \name{Kenv.tor1}

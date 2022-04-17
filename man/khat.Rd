@@ -1,5 +1,5 @@
 % Copyright Barry Rowlingson  and 
-% Peter Diggle (c) 1991-3; http://www.maths.lancs.ac.uk/~rowlings/Splancs/
+% Peter Diggle (c) 1991-3; https://www.maths.lancs.ac.uk/~rowlings/Splancs/
 % R port: copyright 1998-2002 by Roger S. Bivand
 
 \name{khat}
@@ -53,7 +53,7 @@ estimation due to non-recording of points outside the polygon.
 The newstyle argument and khat object were introduced in collaboration 
 with Thomas de Cornulier to permit the mapping of 
 counts or khats for chosen distance values, as in 
-\url{ftp://pbil.univ-lyon1.fr/pub/mac/ADE/ADE4/DocThemPDFUS/Thema81.pdf}, p.18.
+\url{http://pbil.univ-lyon1.fr/R/pdf/Thema81.pdf}, p.18.
 }
 \seealso{\code{\link{Kenv.csr}}}
 \examples{
@@ -74,7 +74,7 @@ Ripley, B.D. 1976 The second-order analysis of stationary point processes,
 Rowlingson, B. and Diggle, P. 1993 Splancs: spatial point pattern analysis
 code in S-Plus.  Computers and Geosciences, 19, 627-655;
 the original sources can be accessed at:
-\url{http://www.maths.lancs.ac.uk/~rowlings/Splancs/}. See also Bivand, R. and
+\url{https://www.maths.lancs.ac.uk/~rowlings/Splancs/}. See also Bivand, R. and
 Gebhardt, A. 2000 Implementing functions for spatial statistical analysis
 using the R language. Journal of Geographical Systems, 2, 307-317.
 }
