@@ -135,9 +135,9 @@ c
       end if                                             
 c                                                                           
       jcount=konvge                                                         
-      dn=dfloat(n)                                                          
+      dn=dble(n)                                                          
       nn=n+1                                                                
-      dnn=dfloat(nn)                                                        
+      dnn=dble(nn)                                                        
       del=1d0                                                               
 c                                                                           
 c        construction of initial simplex.                                   

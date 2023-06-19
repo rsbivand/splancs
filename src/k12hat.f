@@ -63,10 +63,10 @@ c--
         h21(i)=h21(i)+h21(i1)                                                 
       end do
 
-      dn11=dfloat(n1*(n1-1))                                                    
-      dn22=dfloat(n2*(n2-1))                                                    
-      dn12=dfloat((n1-1)*(n2-1))
-      alpha=dfloat(n2)/dfloat(n1+n2)                                        
+      dn11=dble(n1*(n1-1))                                                    
+      dn22=dble(n2*(n2-1))                                                    
+      dn12=dble((n1-1)*(n2-1))
+      alpha=dble(n2)/dble(n1+n2)                                        
 
       do i=1,ns                                                        
         h12(i)=(alpha*h12(i)+(1.0d0-alpha)*h21(i))*area/dn12                    

@@ -21,7 +21,7 @@ c     Algorithm A G Chetwynd  P J Diggle
       capT=tupp-tlow
       capT=capT**2
       
-      dn=dfloat(n)
+      dn=dble(n)
       c1=(1/(dn*(dn-1.0d0))**2)
       c2=(1/(dn*(dn-1.0d0)*(dn-2.0d0)*(dn-3.0d0)))
       c3=4*(1/(dn*(dn-1.0d0)*(dn-2.0d0)))

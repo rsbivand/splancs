@@ -21,10 +21,10 @@ c
       const=0.954929658d0*rh2
 
       call xsort(x,y,n)
-      xinc=a/dfloat(nx)
+      xinc=a/dble(nx)
       x1=a1
       x2=a2
-      yinc=b/dfloat(ny)
+      yinc=b/dble(ny)
       y1=b1
       y2=b2
       xc=x1-0.5d0*xinc

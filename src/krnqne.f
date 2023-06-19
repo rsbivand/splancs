@@ -18,8 +18,8 @@ c
       xw=a2-a1
       yw=b2-b1
 
-      xh=xw/dfloat(nx)
-      yh=yw/dfloat(ny)
+      xh=xw/dble(nx)
+      yh=yw/dble(ny)
       do ix=1,nx
         xgrid(ix)=.5*xh+a1+xh*(ix-1)
       end do

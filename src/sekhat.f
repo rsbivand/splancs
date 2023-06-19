@@ -16,9 +16,9 @@ c
 
       area=plarea(xp,yp,np)
 
-      dn1=dfloat(n1)
-      dn2=dfloat(n2)
-      dn=dfloat(n)
+      dn1=dble(n1)
+      dn2=dble(n2)
+      dn=dble(n)
       dn12=dn1*(dn1-1.0d0)
       dn22=dn2*(dn2-1.0d0)
 

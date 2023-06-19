@@ -59,7 +59,7 @@ C R port: copyright 1998-2002 by Roger S. Bivand
         end do
       end do
 
-      dn=dfloat(n)*dfloat(n-1)
+      dn=dble(n)*dble(n-1)
       adn=area/dn
 
       do i=1,ns                                              

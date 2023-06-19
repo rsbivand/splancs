@@ -104,7 +104,7 @@ c      call dblepr('post-acc ',-1,ht,nt)
       hst(is,it)=hst(is,it)+hst(is1,it)
     8 continue
     7 continue
-      dn11=dfloat(n1*(n1-1))                                                    
+      dn11=dble(n1*(n1-1))                                                    
       do 17 i=1,ns
       hs(i)=hs(i)*area/dn11                                                   
    17 continue                                                              
