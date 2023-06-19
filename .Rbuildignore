@@ -1,2 +1,6 @@
 oChangeLog
 svn2cl.*
+_pkgdown.yml
+README.md
+.github
+docs
