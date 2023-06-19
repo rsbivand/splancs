@@ -12,4 +12,5 @@ Depends: R (>= 2.10.0), sp (>= 0.9)
 Imports: stats, graphics, grDevices, methods
 Description: The Splancs package was written as an enhancement to S-Plus for display and analysis of spatial point pattern data; it has been ported to R and is in "maintenance mode". 
 License: GPL (>= 2)
-URL: https://www.maths.lancs.ac.uk/~rowlings/Splancs/
+URL: https://www.maths.lancs.ac.uk/~rowlings/Splancs/, https://rsbivand.github.io/splancs/, https://github.com/rsbivand/splancs
+BugReports: https://github.com/rsbivand/splancs/issues
