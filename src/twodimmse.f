@@ -14,29 +14,29 @@ C R port: copyright 1998-2000 by Roger S. Bivand
       a=a2-a1
       ncell=nsmse*2
       hcell=hsmse
-      do 10 i=1,n
-      x(i)=x(i)-a1
-      y(i)=y(i)-b1
-   10 continue
+      do i=1,n
+         x(i)=x(i)-a1
+         y(i)=y(i)-b1
+      end do
       call khat(n,a,b,x,y)
       al1=(a*b)/float(n)
       nc2=ncell/2
-      do 1 i=1,nc2
-      g(i)=sqrt(h(i)/pi)
-      t(i)=hcell*i
-      hd(i)=h(i)-t(i)*t(i)*pi
-      d2=g(i)-t(i)
-      ic2=i*2
-      sum=h(1)*form(t(i),hcell)
-      do 11 jc=2,ic2
-      r=hcell*float(jc)
-      jc1=jc-1
-      sum=sum+(h(jc)-h(jc1))*form(t(i),r)
-   11 continue
-      sum=sum/(al1*al1)
-      amse(i)=(al1-2.0*h(i))/(pi*t(i)*t(i))+
-     &            al1*al1*0.1013211*sum/(t(i)**4)
-    1 continue
+      do i=1,nc2
+         g(i)=sqrt(h(i)/pi)
+         t(i)=hcell*i
+         hd(i)=h(i)-t(i)*t(i)*pi
+         d2=g(i)-t(i)
+         ic2=i*2
+         sum=h(1)*form(t(i),hcell)
+         do jc=2,ic2
+            r=hcell*float(jc)
+            jc1=jc-1
+            sum=sum+(h(jc)-h(jc1))*form(t(i),r)
+         end do
+         sum=sum/(al1*al1)
+         amse(i)=(al1-2.0*h(i))/(pi*t(i)*t(i))+
+     &        al1*al1*0.1013211*sum/(t(i)**4)
+      end do
       
       end
 
@@ -53,13 +53,14 @@ c     h     : resulting estimate of k-function (output)
 c                                                                           
       r=(float(ncell)*hcell)**2                                            
       hc1=1.0/hcell                                                       
-      do 10 i=1,ncell                                                       
-   10 h(i)=0.0
-      do 20 i=2,n                                                           
+      do i=1,ncell                                                       
+ 10      h(i)=0.0
+      end do
+      do i=2,n                                                           
       i1=i-1                                                                
       xi=x(i)                                                               
       yi=y(i)                                                               
-      do 20 j=1,i1                                                          
+      do j=1,i1                                                          
       x1=xi-x(j)                                                            
       y1=yi-y(j)                                                            
       t=(x1*x1+y1*y1)                                                       
@@ -67,12 +68,16 @@ c
       t=sqrt(t)                                                            
       it=1+int(t*hc1)                                                     
       h(it)=h(it)+fn2(xi,yi,t,a,b)+fn2(x(j),y(j),t,a,b)                     
-   20 continue                                                              
-      do 40 i=2,ncell                                                       
-   40 h(i)=h(i)+h(i-1)                                                      
+ 20   continue
+      end do
+      end do
+      do i=2,ncell                                                       
+ 40      h(i)=h(i)+h(i-1)
+      end do                                                      
       f1=(a*b)/float(n*n)                                                  
-      do 50 i=1,ncell                                                       
- 50   h(i)=h(i)*f1                                                          
+      do i=1,ncell                                                       
+ 50      h(i)=h(i)*f1
+      end do                                                          
       return                                                                
       end                                                                   
       function fn2(x,y,t,a,b)  
